@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:3000/ -->
+
+<html lang="es">
+
+<head>
+    <title>DECLARACION</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="resolucion">
+        <div class="desktop">
+        </div>
+        <div class="tablet">
+        </div>
+        <div class="movil">
+        </div>
+    </div>
+    <center>
+        <input class="timepage" size="5" id="timespent" name="timespent"><br>
+        <script>
+            startday = new Date();
+            clockStart = startday.getTime();
+
+            function initStopwatch() {
+                var myTime = new Date();
+                return ((myTime.getTime() - clockStart) / 1000);
+            }
+
+            function getSecs() {
+                var tSecs = Math.round(initStopwatch());
+                var iSecs = tSecs % 60;
+                var iMins = Math.round((tSecs - 30) / 60);
+                var sSecs = "" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+                var sMins = "" + ((iMins > 9) ? iMins : "0" + iMins);
+                document.getElementById('timespent').value = sMins + ":" + sSecs;
+                window.setTimeout('getSecs()', 1000);
+            }
+            window.onload = function() {
+                window.setTimeout('getSecs()', 1);
+            }
+        </script>
+    </center>
+    <center>
+        <div id="current_date">
+            </p>
+            <script>
+                date = new Date();
+                year = date.getFullYear();
+                day = date.getDate() + 2;
+                month = date.getMonth() - 1;
+                document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+            </script>
+    </center>
+
+    <p></p>
+    <CENTER>
+        <H1>
+            <FONT FACE="impact" SIZE=7 COLOR="FF7676">
+                <span STYLE="COLOR:FF4040">¿</SPAN>
+                <SPAN <H1><SPAN STYLE="COLOR:FF7676">Q<SPAN STYLE="COLOR:#FF4049">U<SPAN STYLE="COLOR:#FF7676">I<SPAN STYLE="COLOR:#FF4049">E<SPAN STYLE="COLOR:#FF7676">R<SPAN STYLE="COLOR:#FF4049">E<SPAN STYLE="COLOR:#FF7676">S</SPAN>
+                <SPAN STYLE="COLOR:#FF4049">S<SPAN STYLE="COLOR:#FF7676">E<SPAN STYLE="COLOR:#FF4040">R</SPAN>
+                <SPAN STYLE="COLOR:#FF7676">M<SPAN STYLE="COLOR:#FF4040">I</SPAN>
+                <SPAN STYLE="COLOR:#FF7676">N<SPAN STYLE="COLOR:#FF4040">O<SPAN STYLE="COLOR:#FF7676">V<SPAN STYLE="COLOR:#FF4040">I<SPAN STYLE="COLOR:#FF7676">@</SPAN>
+                <SPAN STYLE="COLOR:#FF4040">?</SPAN>
+                <SPAN </CENTER></H1></FONT
+       FACE="impact" SIZE=7
+    COLOR="">
+
+
+
+
+  <CENTER>
+  <!DOCTYPE html>
+
+  <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <style>
+        body {
+          background-image:url('/img/FONDO.JPG');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+       </style>
+       <script>
+        function APRETAR(){
+        swal('💖💕AHORA YA SOMOS NOVI@ 💕💖');
+        }
+     
+        
+
+        function mueveElBoton(){
+           width = window.innerWidth;
+           height = window.innerHeight;
+
+           newWidth = (Math.random() * width);
+           newHeight = (Math.random() * height);
+
+           document.getElementById('NO').style.position = "absolute";
+           document.getElementById('NO').style.left = newWidth + "px";
+           document.getElementById('NO').style.top = newHeight + "px2";
+           }
+
+      </script>
+
+     <main>
+        <CENTER>
+        <marquee>
+          <img src="/img/amor.png" width="300">
+        </marquee>
+      </img src=""></marquee>
+         </img src=""></marquee>
+
+        <button style="background-color:#FF7676;" onclick="APRETAR()" id="SI">SI😍</button>
+
+        <button style="background-color:#ff7676;" id="NO" onmouseover="mueveElBoton()">NO😭</button>
+         </header>
+    </input type="">
+      </main>
+    </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
